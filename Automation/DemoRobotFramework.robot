@@ -6,7 +6,7 @@ Library    SeleniumLibrary
 *** Test Cases ***
 AmazonWebsite
     Open Browser    https://www.amazon.in/  Chrome
-    Sleep   5
+    Sleep   10
     Close Browser
 
 *** Keywords ***
