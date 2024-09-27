@@ -38,9 +38,6 @@ TC_001 Browser Start and Close
     Sleep    5
     Close Browser
     
-TC_002 Enter DOB and Address
 
-
-    Sleep    5
 
     
