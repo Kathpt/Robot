@@ -4,7 +4,8 @@ Library     SeleniumLibrary
 
 *** Variables ***
 ${Browser}      Chrome
-${URL}      http://www.thetestingworld.com/testings
+#${URL}      http://www.thetestingworld.com/testings
+${URL}  https://www.amazon.in/
 
 
 
@@ -38,6 +39,15 @@ TC_001 Browser Start and Close
     Sleep    5
     Close Browser
     
-
+TC_002 Amazon Login
+    Open Browser    ${URL}  ${Browser}
+    Maximize Browser Window
+    Sleep    5
+    Press Keys  id:nav-link-accountList-nav-line-1  ENTER
+ #  Input Text    id:twotabsearchtextbox    Mobiles
+ #   Press Keys    id:twotabsearchtextbox    ENTER
+ #   Press Keys    id:nav-search-submit-button    ENTER
+    Sleep    3
+    Close Browser
 
     
