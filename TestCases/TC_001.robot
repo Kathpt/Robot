@@ -2,10 +2,18 @@
 
 Library     SeleniumLibrary
 
+
+Resource    ../Resourses/Keywords/User defined.robot
+
 *** Variables ***
 ${Browser}      Chrome
 #${URL}      http://www.thetestingworld.com/testings
 ${URL}  https://www.amazon.in/
+
+
+*** Keywords ***
+
+
 
 
 
@@ -14,7 +22,7 @@ TC_001 Browser Start and Close
     Open Browser  ${URL}  ${Browser}
     Maximize Browser Window
     Sleep    5
-    Input Text    name:fld_username     Test
+    Input Text   name:fld_username     Test
     Input Text    name:fld_email    abc@gmail.com
     Input Text    name:fld_password    xyz123
     Input Text    name:fld_cpassword   xyz123
@@ -47,7 +55,9 @@ TC_002 Amazon Login
  #  Input Text    id:twotabsearchtextbox    Mobiles
  #   Press Keys    id:twotabsearchtextbox    ENTER
  #   Press Keys    id:nav-search-submit-button    ENTER
+
+
     Sleep    3
     Close Browser
 
-    
+
